@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Tokens iguales a las variables del archivo de Figma (estilo shadcn/ui). */
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --color-background: #f6f7f9;
+  --color-card: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+
+  --color-primary: #1d4ed8;
+  --color-primary-foreground: #ffffff;
+  --color-primary-soft: #dbeafe;
+
+  --color-sidebar: #0b1220;
+  --color-sidebar-accent: #18233a;
+  --color-sidebar-foreground: #cbd5e1;
+  --color-sidebar-muted: #64748b;
+
+  --color-destructive: #dc2626;
+  --color-destructive-soft: #fee2e2;
+  --color-warning: #b45309;
+  --color-warning-soft: #fef3c7;
+  --color-success: #15803d;
+  --color-success-soft: #dcfce7;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-family: var(--font-sans); letter-spacing: -0.003em; }
+  button, [role="button"], a { cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+}

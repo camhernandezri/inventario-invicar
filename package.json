@@ -1,0 +1,38 @@
+{
+  "name": "invicar-inventario",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de control de inventarios para Invicar (carrocerías). Funciona en red local, sin nube.",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.mts",
+    "seed": "node scripts/seed.mjs",
+    "backup": "node scripts/backup.mjs",
+    "empaquetar": "node scripts/empaquetar.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "clsx": "2.1.1",
+    "lucide-react": "1.54.0",
+    "next": "15.5.27",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "tailwind-merge": "3.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
